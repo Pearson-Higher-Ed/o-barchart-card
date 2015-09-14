@@ -1,0 +1,37 @@
+.chart rect {
+	fill: #5c656b;
+}
+
+.chart text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: middle;
+}
+
+.chart-legend text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+
+.chart-legend line {
+	stroke: #efefef;
+	stroke-width: 1px;
+}
+
+.class-average line {
+	stroke: #faaf0b;
+	stroke-width: 2px;
+}
+
+.class-average rect {
+	stroke: #faaf0b;
+	stroke-width: 2px;
+	fill: #faf08b;
+}
+
+.class-average text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
