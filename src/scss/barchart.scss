@@ -1,0 +1,46 @@
+.o-barchart rect {
+	fill: #5c656b;
+}
+
+.o-barchart text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: middle;
+}
+.o-barchart__legend text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+.o-barchart__legend line {
+	stroke: #efefef;
+	stroke-width: 1px;
+}
+.o-barchart__average line {
+	stroke: #faaf0b;
+	stroke-width: 2px;
+}
+.o-barchart__average rect {
+	stroke: #faaf0b;
+	stroke-width: 2px;
+	fill: #faf08b;
+}
+.o-barchart__average text {
+	fill: #5c656b;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+
+.o-barchart__percent-value-text {
+	fill: #19a431;
+}
+
+.o-barchart-hidden-item {
+	display: none;
+}
+
+.o-barchart-title {
+	font-size: 14px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
