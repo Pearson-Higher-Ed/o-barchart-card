@@ -21,7 +21,7 @@ module.exports = function() {
 
 			//Create legend
 			var legend = chart.append("g")
-				.attr("class", "chart-legend");
+				.attr("class", "o-barchart-legend");
 			legend.append("text")
 				.attr("x", 30)
 				.attr("y", top)
@@ -102,7 +102,7 @@ module.exports = function() {
 				.data(data)
 				.enter().append("g")
 				.attr("class", function(d, i) {
-					return "chart-average hidden-item itemAverage" + i;
+					return "o-barchart-average hidden-item itemAverage" + i;
 				})
 				.attr("transform", function(d, i) {
 					return "translate(" + (((i+1) * (width / 10)) + 5) + ")";
@@ -136,7 +136,7 @@ module.exports = function() {
 			//create class average
 
 			var average = chart.append("g")
-				.attr("class", "chart-average classAverage");
+				.attr("class", "o-barchart-average classAverage");
 			average.append("line")
 				.attr("x1", 30)
 				.attr("x2", 320)

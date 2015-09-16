@@ -1,39 +1,39 @@
-.chart rect {
+.o-barchart rect {
   fill: #5c656b;
 }
-.chart text {
+.o-barchart text {
   fill: #5c656b;
   font: 10px sans-serif;
   text-anchor: middle;
 }
-.chart-legend text {
+.o-barchart-legend text {
 	fill: #5c656b;
 	font: 10px sans-serif;
 	text-anchor: end;
 }
-.chart-legend line {
+.o-barchart-legend line {
 	stroke: #efefef;
 	stroke-width:1px;
 }
-.chart-average line{
+.o-barchart-average line{
 	stroke:#faaf0b;
 	stroke-width:2px;
 }
-.chart-average rect{
+.o-barchart-average rect{
 	stroke:#faaf0b;
 	stroke-width:2px;
 	fill:#faf08b;
 }
-.chart-average text {
+.o-barchart-average text {
 	fill: #5c656b;
 	font: 10px sans-serif;
 	text-anchor: end;
 }
 
-.chart .percent-value-text {
+.o-barchart .percent-value-text {
 	fill: #19a431;
 }
 
-.chart .hidden-item {
+.o-barchart .hidden-item {
 	display: none;
 }
