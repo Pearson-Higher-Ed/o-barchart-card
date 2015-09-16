@@ -1,37 +1,39 @@
 .chart rect {
-	fill: #5c656b;
+  fill: #5c656b;
 }
-
 .chart text {
-	fill: #5c656b;
-	font: 10px sans-serif;
-	text-anchor: middle;
+  fill: #5c656b;
+  font: 10px sans-serif;
+  text-anchor: middle;
 }
-
 .chart-legend text {
 	fill: #5c656b;
 	font: 10px sans-serif;
 	text-anchor: end;
 }
-
 .chart-legend line {
 	stroke: #efefef;
-	stroke-width: 1px;
+	stroke-width:1px;
 }
-
-.class-average line {
-	stroke: #faaf0b;
-	stroke-width: 2px;
+.chart-average line{
+	stroke:#faaf0b;
+	stroke-width:2px;
 }
-
-.class-average rect {
-	stroke: #faaf0b;
-	stroke-width: 2px;
-	fill: #faf08b;
+.chart-average rect{
+	stroke:#faaf0b;
+	stroke-width:2px;
+	fill:#faf08b;
 }
-
-.class-average text {
+.chart-average text {
 	fill: #5c656b;
 	font: 10px sans-serif;
 	text-anchor: end;
+}
+
+.chart .percent-value-text {
+	fill: #19a431;
+}
+
+.chart .hidden-item {
+	display: none;
 }

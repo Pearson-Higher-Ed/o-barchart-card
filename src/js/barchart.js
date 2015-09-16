@@ -39,7 +39,7 @@ function BarChart(element, params) {
 			break;
 	}
 	var chartDiv = document.createElement("div");
-	chartDiv.className = "o-barchartcard";
+	chartDiv.className = "o-barchart";
 
 	this.card = document.createElement("div");
 	this.card.appendChild(chartDiv);
