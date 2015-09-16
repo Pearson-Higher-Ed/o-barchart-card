@@ -1,16 +1,26 @@
 {
-  "private": true,
-  "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
-  },
+  "name": "o-barchart-card",
+  "version": "0.0.1",
+  "description": " assignment barchart Card",
+  "main": "barchart.js",
+  "dependencies": {},
+  "keywords": [
+    "cards",
+    "reference"
+  ],
+  "author": "Rich Winn",
+  "license": "ISC",
   "devDependencies": {
-    "expect.js": "^0.3.1",
-    "debowerify": "Financial-Times/debowerify",
+    "browserify": "^11.0.1",
+    "browserify-istanbul": "^0.2.1",
+    "debowerify": "^1.3.1",
     "karma": "^0.12.31",
-    "karma-browserify": "^4.0.0",
+    "karma-browserify": "^4.3.0",
+    "karma-commonjs": "0.0.13",
+    "karma-coverage": "^0.5.0",
     "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.1.4",
-    "mocha": "^2.1.0",
-    "babelify": "^5.0.4"
+    "mocha": "^2.2.4",
+    "phantomjs": "^1.9.18"
   }
 }
