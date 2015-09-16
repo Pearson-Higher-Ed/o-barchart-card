@@ -1,7 +1,7 @@
 /*global*/
 "use strict";
 
-var d3 = require("../../bower_components/d3/d3");
+var d3 = require("d3/d3");
 var d3BarChart = require("./d3BarChart");
 
 function BarChart(element, params) {
