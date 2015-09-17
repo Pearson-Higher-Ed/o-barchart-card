@@ -18,7 +18,7 @@ function BarChart(element, params) {
 		return;
 	}
 
-	if(!params.size || !params.data || !params.classAverage) {
+	if(!params.size || !params.data || !params.classAverage || !params.title) {
 		throw "No data provided. Please configuration data.";
 	}
 
@@ -41,6 +41,11 @@ function BarChart(element, params) {
 	var chartDiv = document.createElement("div");
 	chartDiv.className = "o-barchart";
 
+	var chartTitle = document.createElement("h1");
+	chartTitle.className = "o-barchart-title";
+	chartTitle.innerHTML = params.title;
+
+	chartDiv.appendChild(chartTitle);
 	this.card = document.createElement("div");
 	this.card.appendChild(chartDiv);
 	this.card.className = "o-card o-card--" + params.size;

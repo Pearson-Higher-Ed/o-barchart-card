@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			{name: "HW 1.5", value: 83, average: 86},
 			{name: "T 1", value: 89, average: 85}
 		],
-		classAverage:86}
+		classAverage:86,
+		title: "Assignment Performance"}
 	);
 
 });

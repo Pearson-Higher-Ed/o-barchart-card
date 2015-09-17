@@ -59,13 +59,10 @@ module.exports = function() {
 					this.style.fill = "#19A431";
 					bar.select(".text-value" + i)
 						.classed("hidden-item", false);
-						// .classed("display-item", true);
 					chart.select(".classAverage")
 						.classed("hidden-item", true);
-						// .classed("display-item", false);
 					chart.select(".itemAverage" + i)
 						.classed("hidden-item", false);
-						// .classed("display-item")
 				})
 				.on("mouseout", function(d, i) {
 					bar.select(".text-value" + i)
@@ -128,9 +125,9 @@ module.exports = function() {
 				.attr("y", function(d) {
 					return bottom - yScale(d.average)+3;
 				})//+3 just to center the text better
-				.attr("x", 108)
+				.attr("x", 110)
 				.text(function(d) {
-					return d.average + " class average";
+					return d.average + " Class Average";
 				});
 
 			//create class average
@@ -149,8 +146,8 @@ module.exports = function() {
 				.attr("x", 320);
 			average.append("text")
 				.attr("y", bottom - yScale(classAverage) + 3)//+3 just to center the text better
-				.attr("x", 398)
-				.text("86 class average");
+				.attr("x", 400)
+				.text("86 Class Average");
 			//create class average
 
 		});
