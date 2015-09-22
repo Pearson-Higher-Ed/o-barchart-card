@@ -1,6 +1,6 @@
 {
   "name": "o-barchart-card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": " assignment barchart Card",
   "main": "barchart.js",
   "dependencies": {},
