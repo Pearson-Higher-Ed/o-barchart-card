@@ -1,6 +1,6 @@
 /*global require*/
-
 "use strict";
+
 document.addEventListener("DOMContentLoaded", function() {
 	var BarChart = require("../../main");
 

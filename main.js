@@ -2,4 +2,4 @@
 
 "use strict";
 
-module.exports = require("./src/js/barchart");
+module.exports = require("./src/js/BarChartCard");
