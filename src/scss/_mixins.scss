@@ -1,0 +1,13 @@
+////
+/// @group o-barchartcard
+/// @link http://registry.origami.ft.com/components/o-barchartcard
+////
+
+/// Hello world
+///
+/// @param {String} $who [world]
+@mixin oBarChartCardHello($who: world) {
+	.foo {
+		content: 'Hello, #{$who}!';
+	}
+}

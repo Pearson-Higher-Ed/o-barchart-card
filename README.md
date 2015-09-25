@@ -1,43 +1,34 @@
-# o-barchartcard
+# o-barchartcard [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-barchart-card.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-barchart-card)
 
-**Note:** This is not a usable Origami component.
+## Use
 
-Project structure for new Origami components.
+To use, create a new instance of the card with a JSON configuration payload.
 
-### Creating a new Origami Module
+The JSON paramaters are as follows:
 
-1. Clone this repository into a new folder:
+	 	data (required): data to be displayed in the bar chart
+    title (required): title of the graph
+    classAverage (required): The overall class average
 
-  ```
-  git clone https://github.com/Financial-Times/o-barchartcard.git o-your-component
-  ```
-2. Search `o-barchartcard` and replace with `o-your-component`:
+This card works by building the card in a DOM node and then returning that node when .getDomNode() is called.
 
-  ```
-  find . -name '*.*' -type f -print -exec sed -i '' 's/o-barchartcard/o-your-component/g' {} \;
-  ```
-3. Search `oBarChartCard` and replace with `oYourComponent`:
+### Example HTML
+	<div class="card-medium-wide" id="chart"></div>
+	<script>
+			var BarChart = require("../../main");
 
-  ```
-  find . -name '*.*' -type f -print -exec sed -i '' 's/oBarChartCard/oYourComponent/g' {} \;
-  ```
-4. Re-name the component in the description field of `origami.json`
-
-### Deploying for the first time
-
-1. Create a new repository (tipically: on GitHub)
-2. Delete the existing Git directory: `rm -Rf .git`
-3. Initialise a new local Git repository: `git init .`
-4. Add the remote repository:
-
-  ```
-  git remote add origin https://github.com/Financial-Times/o-your-component.git
-  ```
-5. Test and verify: `obt test && obt verify` (and fix the code raising errors)
-6. Commit and push: `git add . && git commit -m "Initial commit" && git push origin master`
-
-----
-
-## Licence
-
-This software is published by the Financial Times under the [MIT licence](http://opensource.org/licenses/MIT).
+			new BarChart("#chart", {
+				size:"medium",
+				data:[
+					{name: "HW 1.1", value: 70, average: 65},
+					{name: "HW 1.2", value: 65, average: 55},
+					{name: "HW 1.3", value: 80, average: 95},
+					{name: "QZ 1.1", value: 85, average: 75},
+					{name: "HW 1.4", value: 90, average: 80},
+					{name: "HW 1.5", value: 83, average: 86},
+					{name: "T 1", value: 89, average: 85}
+				],
+				classAverage:86,
+				title: "Assignment Performance"}
+			);
+	</script>
