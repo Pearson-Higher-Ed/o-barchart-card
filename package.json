@@ -1,6 +1,6 @@
 {
   "name": "o-barchart-card",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": " assignment barchart Card",
   "main": "barchart.js",
   "dependencies": {},
@@ -8,7 +8,7 @@
     "cards",
     "reference"
   ],
-  "author": "Rich Winn",
+  "author": "Aegis Team",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^11.0.1",
