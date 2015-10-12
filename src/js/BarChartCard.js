@@ -1,7 +1,7 @@
 /*global*/
 "use strict";
 
-var barChart = require("./BarChart");
+var barChart = require("./barchart");
 
 function BarChartCard(element, params) {
 	if (!(this instanceof BarChartCard)) {
